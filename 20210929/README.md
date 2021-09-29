@@ -1,5 +1,7 @@
 # 20210928
 
+[<<](../README.md)
+
 ## my solution 
 
 >[0 (随便瞎写的，引入了新list)](./my_solution_0.md)
