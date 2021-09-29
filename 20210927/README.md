@@ -2,16 +2,16 @@
 
 ## my solution
 
->[my_solution_1 (click to view)](https://github.com/HKUST-CPEG/HKUST-CPEG.github.io/blob/master/20210927/my_solution_1.py)  
+>[my_solution_1 (click to view)](./my_solution_1.md)  
 
 ## 郑大哥版本(又赢了)
 
->[(click to view)](https://github.com/HKUST-CPEG/HKUST-CPEG.github.io/blob/master/20210927/0927.cpp)
+>[(click to view)](./0927.md)
 
 ## 林大哥版本
 
->[(click to view)](https://github.com/HKUST-CPEG/HKUST-CPEG.github.io/blob/master/20210927/rotate_array.cpp)
+>[(click to view)](./rotate_array.md)
 
 ## today's problem
 
->![]( ./img.jpg)
+>![](./img.jpg)

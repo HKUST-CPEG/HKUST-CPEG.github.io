@@ -5,13 +5,12 @@
 >|Date|Problem|
 >|:-:|:-:|
 >|2021 09 29|[click to view](./20210929/README.md)|
+>|2021 09 28|[click to view](./20210928/README.md)|
 >|2021 09 27|[click to view](./20210927/README.md)|
 >|2021 09 25|[click to view](./20210925/README.md)|
 >|Earlier|[click to view](./earlier/README.md)|
 
 ## Discussions
-
->[讨论区](https://github.com/HKUST-CPEG/HKUST-CPEG.github.io/discussions)
 
 >![](./imgs/Ethen_0.jpg)
 

@@ -1,11 +1,20 @@
-# 20210929
+# 20210928
 
-## solution
+## my solution
 
->[sample answer](./solution_0.md)
+>
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    ???
+    还没写完呢
+}
+
+```
 
 ## today's problem
 
->![]( ./img_0.jpg)
-
->![]( ./img_1.jpg)
+>![](./img_0.jpg)
