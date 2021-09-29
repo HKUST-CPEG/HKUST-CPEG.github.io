@@ -1,7 +1,6 @@
 # my_solution_debug.cpp
 
 ```cpp
-
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>

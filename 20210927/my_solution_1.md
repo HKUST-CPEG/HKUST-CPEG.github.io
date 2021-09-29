@@ -1,7 +1,6 @@
 # my_solution_1.py
 
 ```py
-
 def rotate_list(nums, k):
     for i in range(k):
         for i in range(0, len(nums)-1):

@@ -1,7 +1,6 @@
 # rotate_array.cpp
 
 ```cpp
-
 #include <iostream>
 using namespace std;
 
