@@ -8,6 +8,5 @@
 
 ## today's problem
 
->![](./img_0.jpg)
-
->![](./img_1.jpg)
+>![img_0.jpg](./img_0.jpg)
+>![img_1.jpg](./img_1.jpg)

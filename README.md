@@ -10,13 +10,15 @@
 >|2021 09 25|[click to view](./20210925/README.md)|
 >|Earlier|[click to view](./earlier/README.md)|
 
+## Resources
+
+>[Useful Links](./docs/Useful_Links.md)
+
 ## Discussions
 
->![](./imgs/Ethen_0.jpg)
-
->![](./imgs/prulev_0.jpg)
-
->![](./imgs/prulev_1.jpg)
+>![Ethen_0.jpg](./imgs/Ethen_0.jpg)
+>![prulev_0.jpg](./imgs/prulev_0.jpg)
+>![prulev_1.jpg](./imgs/prulev_1.jpg)
 
 ----
 
