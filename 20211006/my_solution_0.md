@@ -11,19 +11,20 @@ def factorial(n):
 
 
 def c(a, b):
-    if a >= b:
+
+    if a >= b and a > 0 and b > 0:
         return factorial(a)/(factorial(b)*factorial(a-b))  # a choose b
-    else:
-        return -1
+
+    return -1
 
 
 def num_ways(n, m):
-    return c(m+n, n)
+    return c(m+n-2, n-1)
 
 
 print("please input m and n: ")
 m = int(input("m = "))
 n = int(input("n = "))
 
-print("number of ways: ",int(num_ways(m, n)))
+print("number of ways: ", int(num_ways(m, n)))
 ```
