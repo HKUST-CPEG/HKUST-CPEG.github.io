@@ -4,6 +4,7 @@
 
 >|Date|Problem|
 >|:-:|:-:|
+>|2021 10 07|[click to view](./20211007/README.md)|
 >|2021 10 06|[click to view](./20211006/README.md)|
 >|2021 09 29|[click to view](./20210929/README.md)|
 >|2021 09 28|[click to view](./20210928/README.md)|
