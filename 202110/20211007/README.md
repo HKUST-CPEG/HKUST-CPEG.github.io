@@ -1,6 +1,6 @@
 # 20211007
 
-[<<](../README.md)
+[<<](https://hkust-cpeg.github.io/)
 
 ## my solution
 
