@@ -246,7 +246,7 @@ int main()
     // cerr << input << endl;
     int res = 0;
     String *origin = new String(input);
-    if (origin->getLen() > 10)
+    if (origin->getLen() > 9)
     {
         cout << "can not solve solve such a complicated problem :(" << endl;
         return -1;
