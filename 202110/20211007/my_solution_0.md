@@ -1,4 +1,4 @@
-# my_solution_0.py
+# my_solution_0.cpp
 
 [<<](./README.md)
 
