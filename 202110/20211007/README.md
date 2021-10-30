@@ -4,7 +4,7 @@
 
 ## my solution
 
->[my_solution_0.cpp (存在一些问题，欢迎大哥指教)](https://github.com/HKUST-CPEG/HKUST-CPEG.github.io/blob/master/202110/20211007/my_solution_0.cpp)
+>[my_solution_0.cpp (存在一些问题，欢迎大哥指教)](./my_solution_0.md)
 
 ## 林大哥的solution
 
