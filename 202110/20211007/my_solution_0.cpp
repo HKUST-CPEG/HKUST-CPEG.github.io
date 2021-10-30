@@ -296,7 +296,7 @@ int main()
 
     cout << endl
          << "There are " << highestNum << " solutions to get highest score" << endl;
-    if (highestNum <= 20)
+    if (highestNum <= 50)
     {
         for (int i = 0; i < highestNum; i++)
         {
