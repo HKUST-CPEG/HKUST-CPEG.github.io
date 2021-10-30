@@ -190,9 +190,7 @@ public:
                 n = 1;
             }
         }
-        cout << 1111 << endl;
         list[len - 1]->setNum(n); // the last one
-        cout << 1111 << endl;
         delete[] val_m;
     }
     ~String()
