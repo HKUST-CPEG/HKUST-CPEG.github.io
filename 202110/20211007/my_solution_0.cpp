@@ -54,8 +54,7 @@ public:
             return 'A';
         else if (type == ABC::B)
             return 'B';
-        else if (type == ABC::C)
-            return 'C';
+        return 'C';
     }
 
     int getScore()
@@ -246,14 +245,14 @@ int main()
     // cerr << input << endl;
     int res = 0;
     String *origin = new String(input);
-    if (origin->getLen() > 9)
+    if (origin->getLen() > 11)
     {
-        cout << "can not solve solve such a complicated problem :(" << endl;
+        cout << "can not solve such a complicated problem :(" << endl;
         return -1;
     }
-    String **arr = new String *[int(pow(origin->getLen(), origin->getLen()))];
-    String **result = new String *[int(pow(origin->getLen(), origin->getLen()))];
-    String **highest = new String *[int(pow(origin->getLen(), origin->getLen()))];
+    String **arr = new String *[int(pow(origin->getLen(), 7))];
+    String **result = new String *[int(pow(origin->getLen(), 7))];
+    String **highest = new String *[int(pow(origin->getLen(), 7))];
     arr[0] = origin;
     delete[] input;
     cout << endl
@@ -297,9 +296,20 @@ int main()
 
     cout << endl
          << "There are " << highestNum << " solutions to get highest score" << endl;
-    for (int i = 0; i < highestNum; i++)
+    if (highestNum <= 20)
     {
-        printResult(highest[i]);
+        for (int i = 0; i < highestNum; i++)
+        {
+            printResult(highest[i]);
+        }
+    }
+    else
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            printResult(highest[i]);
+        }
+        cout << "......too many solutions!!!  only the first 20 are showed" << endl;
     }
 
     delete[] result;
