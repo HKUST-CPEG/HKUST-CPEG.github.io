@@ -4,11 +4,11 @@
 
 ## my solution
 
->不会
+>[my_solution_0.cpp (存在一些问题，欢迎大哥指教)](https://github.com/HKUST-CPEG/HKUST-CPEG.github.io/blob/master/202110/20211007/my_solution_0.cpp)
 
 ## 林大哥的solution
 
->[score_attack.c](./score_attack.md)
+>[score_attack.c (可能不是很对)](./score_attack.md)
 
 ## today's problem
 
