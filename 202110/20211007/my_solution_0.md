@@ -115,6 +115,7 @@ private:
             delete[] list;
             list = new_list;
             len -= dif;
+            // cerr << len << endl;
         }
         mergeChar(); // merge same char if exist
     }
@@ -157,7 +158,7 @@ public:
         /*get len of our list*/
         int iptlen = strlen(m); // the length of the input string
         m = strupr(m);
-
+        // cerr << "iptlen  " << iptlen << endl;
         char *val_m = new char[iptlen + 1]{};
         int vallen = 0;
         for (int i = 0; i < iptlen; i++)
@@ -167,7 +168,8 @@ public:
                 val_m[vallen++] = m[i];
             }
         }
-
+        // cerr << "vallen  " << vallen << endl;
+        // cerr << val_m << endl;
         len = 0;
         for (int i = 0; i < vallen - 1; i++)
         {
@@ -177,7 +179,6 @@ public:
             }
         }
         len++;
-
         /*put chars into our list*/
         list = new Char *[len];
         list[0] = new Char(val_m[0]); // the first char
@@ -247,88 +248,95 @@ void printResult(const String *s)
 
 int main()
 {
-    char *input = new char[512];
-    cin >> input;
-    // cerr << input << endl;
-    int res = 0;
-    String *origin = new String(input);
-    if (origin->getLen() > 11)
+    while (true)
     {
-        cout << "can not solve such a complicated problem :(" << endl;
-        return -1;
-    }
-    String **arr = new String *[int(pow(origin->getLen(), 7))];
-    String **result = new String *[int(pow(origin->getLen(), 7))];
-    String **highest = new String *[int(pow(origin->getLen(), 7))];
-    arr[0] = origin;
-    delete[] input;
-    cout << endl
-         << "input: " << endl;
-    arr[0]->print();
-    cout << endl;
-
-    int arrLen = 1;
-    for (int i = 0; i < arrLen; i++)
-    {
-        if (arr[i]->getLen() == 0)
+        char *input = new char[512];
+        cout << "please input your string (A/B/C):" << endl;
+        cin >> input;
+        int res = 0;
+        String *origin = new String(input);
+        if (origin->getLen() > 11)
         {
-            result[res++] = arr[i];
+            cout << "can not solve such a complicated problem :(" << endl;
+            return -1;
+        }
+        String **arr = new String *[int(pow(origin->getLen(), 7))];
+        String **result = new String *[int(pow(origin->getLen(), 7))];
+        String **highest = new String *[int(pow(origin->getLen(), 7))];
+        arr[0] = origin;
+        delete[] input;
+        cout << endl
+             << "input: " << endl;
+        arr[0]->print();
+        cout << endl;
+
+        int arrLen = 1;
+        for (int i = 0; i < arrLen; i++)
+        {
+            if (arr[i]->getLen() == 0)
+            {
+                result[res++] = arr[i];
+            }
+            else
+            {
+                for (int m = 0; m < arr[i]->getLen(); m++)
+                {
+                    // cerr << "q";
+                    arr[arrLen++] = new String(arr[i], m);
+                    // cerr << m;
+                }
+            }
+        }
+
+        int highestNum = 0;
+        int highest_score = -1;
+        for (int i = 0; i < res; i++)
+        {
+            if (result[i]->getScore() > highest_score)
+            {
+                highest_score = result[i]->getScore();
+                highestNum = 0;
+                highest[highestNum++] = result[i];
+            }
+            else if (result[i]->getScore() == highest_score)
+            {
+                highest[highestNum++] = result[i];
+            }
+        }
+
+        cout << endl
+             << "There are " << highestNum << " solutions to get highest score" << endl;
+        if (highestNum <= 50)
+        {
+            for (int i = 0; i < highestNum; i++)
+            {
+                printResult(highest[i]);
+            }
         }
         else
         {
-            for (int m = 0; m < arr[i]->getLen(); m++)
+            for (int i = 0; i < 20; i++)
             {
-                arr[arrLen++] = new String(arr[i], m);
+                printResult(highest[i]);
             }
+            cout << "......too many solutions!!!  only the first 20 are showed" << endl;
         }
-    }
 
-    int highestNum = 0;
-    int highest_score = -1;
-    for (int i = 0; i < res; i++)
-    {
-        if (result[i]->getScore() > highest_score)
+        delete[] result;
+        delete[] highest;
+        for (int i = 0; i < arrLen; i++)
         {
-            highest_score = result[i]->getScore();
-            highestNum = 0;
-            highest[highestNum++] = result[i];
+            delete arr[i];
         }
-        else if (result[i]->getScore() == highest_score)
-        {
-            highest[highestNum++] = result[i];
-        }
-    }
+        delete[] arr;
 
-    cout << endl
-         << "There are " << highestNum << " solutions to get highest score" << endl;
-    if (highestNum <= 50)
-    {
-        for (int i = 0; i < highestNum; i++)
-        {
-            printResult(highest[i]);
-        }
-    }
-    else
-    {
-        for (int i = 0; i < 20; i++)
-        {
-            printResult(highest[i]);
-        }
-        cout << "......too many solutions!!!  only the first 20 are showed" << endl;
-    }
+        cout << endl
+             << "Totally " << highestNum << " solutions" << endl
+             << endl;
 
-    delete[] result;
-    delete[] highest;
-    for (int i = 0; i < arrLen; i++)
-    {
-        delete arr[i];
+        cout << "The program did not crash" << endl
+             << endl
+             << endl;
     }
-    delete[] arr;
-
-    cout << endl
-         << "Totally " << highestNum << " solutions" << endl
-         << endl;
-
-    cout << "The program did not crash" << endl;
 }
 ```
