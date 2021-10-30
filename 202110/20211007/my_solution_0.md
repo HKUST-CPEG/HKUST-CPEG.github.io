@@ -257,8 +257,10 @@ int main()
         String *origin = new String(input);
         if (origin->getLen() > 11)
         {
-            cout << "can not solve such a complicated problem :(" << endl;
-            return -1;
+            cout << "can not solve such a complicated problem :(" << endl
+                 << endl
+                 << endl;
+            continue;
         }
         String **arr = new String *[int(pow(origin->getLen(), 7))];
         String **result = new String *[int(pow(origin->getLen(), 7))];
