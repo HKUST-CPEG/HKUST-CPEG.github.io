@@ -28,7 +28,6 @@ public:
     }
     Char(const char &inchar)
     {
-        // cerr << "inchar  " << inchar << endl;
         if (inchar == 'A' || inchar == 'a')
         {
             type = ABC::A;
@@ -107,7 +106,6 @@ private:
             delete[] list;
             list = new_list;
             len -= dif;
-            // cerr << len << endl;
         }
         mergeChar(); // merge same char if exist
     }
@@ -150,7 +148,6 @@ public:
         /*get len of our list*/
         int iptlen = strlen(m); // the length of the input string
         m = strupr(m);
-        // cerr << "iptlen  " << iptlen << endl;
         char *val_m = new char[iptlen + 1]{};
         int vallen = 0;
         for (int i = 0; i < iptlen; i++)
@@ -160,8 +157,7 @@ public:
                 val_m[vallen++] = m[i];
             }
         }
-        // cerr << "vallen  " << vallen << endl;
-        // cerr << val_m << endl;
+
         len = 0;
         for (int i = 0; i < vallen - 1; i++)
         {
@@ -275,9 +271,7 @@ int main()
             {
                 for (int m = 0; m < arr[i]->getLen(); m++)
                 {
-                    // cerr << "q";
                     arr[arrLen++] = new String(arr[i], m);
-                    // cerr << m;
                 }
             }
         }
